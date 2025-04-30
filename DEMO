@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foldability Tester</title>
+    <script>
+        function checkFoldability() {
+            const userThought = document.getElementById('thought').value;
+            const dimensions = Math.floor(Math.random() * 5) + 1; // Mock dimension calculation
+            alert(`Your thought is compressible to ${dimensions}D.`);
+        }
+    </script>
+</head>
+<body>
+    <h1>Foldability Tester</h1>
+    <p>Enter your thought to test its cognitive foldability:</p>
+    <textarea id="thought" rows="4" cols="50"></textarea><br>
+    <button onclick="checkFoldability()">Test Foldability</button>
+</body>
+</html>
